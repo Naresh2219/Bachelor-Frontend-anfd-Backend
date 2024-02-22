@@ -1,0 +1,35 @@
+<table border="1">
+  <thead>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <tr>
+      <th>Item Name</th>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th>CreatedAt</th>
+      <th>delete</th>
+      <th>Amount</th>
+    </tr> 
+  </thead>
+  <tbody>
+    <tr *ngFor="let expense of expenses">
+      <td>{{ expense.itemName }}</td>
+      <td>{{ expense.itemQuantity }}</td>
+      <td>{{ expense.itemPrice }}</td>
+      <td>{{ expense.createdAt | date: 'dd/MM/yyyy HH:mm:ss' }}</td>
+      <td>
+        <a (click)="deleteExpense(expense)" ><i class="fa fa-trash"></i></a>
+      </td>
+      <td>{{ expense.itemQuantity * expense.itemPrice }}</td>
+    </tr>
+    <tr class="total-row">
+      <td colspan="5" style="text-align: right;">Total Price:</td>
+      <td class="total-price">{{ getTotalPrice() }}</td>
+    </tr>
+  </tbody>
+</table>
+<footer>
+  <p>&copy;all rightes reserved 2024
+  </p>
+  <i class="fa fa-github"></i>
+  <i class="fa fa-linkedin"></i>
+</footer>

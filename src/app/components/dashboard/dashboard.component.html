@@ -1,0 +1,17 @@
+
+<form [formGroup]="itemForm" (ngSubmit)="addItem()">
+    <label for="itemName">Item Name</label>
+    <input type="text" id="itemName" formControlName="itemName" required/>
+  
+    <label for="itemQuantity">Quantity</label>
+    <input type="number" id="itemQuantity" formControlName="itemQuantity" required placeholder="enter in actual weight gm or kg"/>
+  
+    <label for="itemPrice">Enter Price</label>
+    <input type="number" id="itemPrice" formControlName="itemPrice" required placeholder="enter net weight price"/>
+  
+    <button type="submit">Add Item</button>
+
+  </form><br>
+  <app-itemlist>
+  
+  </app-itemlist>

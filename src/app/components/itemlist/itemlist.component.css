@@ -1,0 +1,55 @@
+/* Apply basic styling to the table */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: rgb(203, 239, 239);
+    font-style: italic;
+  }
+  
+  /* Style for table header */
+  th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Style for table cells */
+  td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Style for delete link */
+  a {
+    color: red;
+    cursor: pointer;
+  }
+  a:hover{
+    color: rgb(100, 90, 143);
+  }
+  
+  /* Style for total row */
+  tr.total-row {
+    font-weight: bold;
+  }
+  
+  /* Style for the total price cell */
+  td.total-price {
+    text-align: right;
+  }
+  
+  footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+  }
+  .fa-github{
+    color: white;
+    text-align: end;
+  }
+  .fa-linkedin{
+    text-align: end;
+    margin: 10px;
+  }
